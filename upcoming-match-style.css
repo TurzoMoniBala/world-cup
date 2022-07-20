@@ -62,7 +62,7 @@ body {
 .top-banner-img {
   padding-top: 33px;
   width: 581px;
-  height: 610px;
+  height: auto;
   padding-right: 79px;
 }
 .top-banner img {
@@ -98,6 +98,7 @@ article {
   background-color: white;
   font-weight: 500;
   font-size: 20px;
+  border: none;
 }
 .button-box a {
   text-decoration: none;
@@ -301,6 +302,7 @@ footer h1 {
     background-color: white;
     font-weight: 500;
     font-size: 20px;
+    border: 1px solid #161616;
   }
   /* only tab vew button */
   .btn-vew-all {
@@ -444,6 +446,9 @@ footer h1 {
     align-items: center;
     text-align: center;
     justify-content: center;
+  }
+  .button-box button {
+    border: 1px solid #161616;
   }
   /* upcoming match grid or box */
   #flag-grid {
