@@ -46,13 +46,13 @@ body {
   color: white;
   border-radius: 6px;
   text-align: center;
-  transition: 0.8s all;
   padding: 20px;
 }
 .btn-button:hover {
   background-color: rgb(249, 141, 10);
   box-shadow: 0 2px 10px 5px chocolate;
   color: black;
+  transition: 0.8s;
 }
 .btn-button a {
   text-decoration: none;
@@ -245,7 +245,6 @@ footer h1 {
     color: white;
     border-radius: 6px;
     text-align: center;
-    transition: 0.8s all;
     padding: 12px;
   }
   /* top banner annimation */
@@ -253,6 +252,7 @@ footer h1 {
     background-color: rgb(249, 141, 10);
     box-shadow: 0 2px 10px 5px chocolate;
     color: black;
+    transition: 0.8s all;
   }
   /* top banner button */
   .btn-button a {
@@ -274,23 +274,22 @@ footer h1 {
   -----------article--
   -------------------*/
   article {
+    width: 91%;
     margin: 30px 50px;
     display: inline-block;
   }
   /* side button box or nav bar */
   .button-box {
-    width: auto;
+    width: 95%;
     height: 64px;
     background-color: white;
-    padding: 30px;
     border-radius: 10px;
     display: flex;
-    margin-right: 24px;
-    padding-top: 0;
     align-items: center;
-    justify-content: center;
-    padding-left: 50px;
-    margin-left: 50px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
   }
   /* upcoming match box */
   #flag-grid {
@@ -377,8 +376,6 @@ footer h1 {
   --------------------*/
 @media only screen and (max-width: 688px) {
   body {
-    align-items: center;
-    justify-content: center;
     margin: 0;
   }
   /* banner top section */
@@ -392,7 +389,6 @@ footer h1 {
     padding-bottom: 0;
     margin: 5%;
     margin-right: 5%;
-    padding-left: 140px;
   }
   .top-banner h1 {
     font-size: 30px;
@@ -403,7 +399,7 @@ footer h1 {
     font-size: 10px;
   }
   .banner-taxt {
-    padding: 0 40px 40px 40px;
+    padding: 0px;
     width: 250px;
     height: 220px;
     justify-content: center;
@@ -424,11 +420,11 @@ footer h1 {
   }
   /* image section for top  */
   .top-banner-img {
-    padding-left: 90px;
+    padding-left: 60px;
     padding-top: 20px;
     padding-right: 0;
-    width: 160px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
   }
   /*-------------------------
 ------------article------
@@ -436,10 +432,11 @@ footer h1 {
   article {
     margin: 5px;
     display: block;
+    width: auto;
+    height: auto;
   }
   /* side button box or nav bar */
   .button-box {
-    margin-left: 160px;
     width: 252px;
     height: 252px;
     background-color: rgb(255, 255, 255);
@@ -447,14 +444,15 @@ footer h1 {
     border-radius: 10px;
     display: grid;
     gap: 30px;
-    margin-right: 24px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   /* upcoming match grid or box */
   #flag-grid {
     display: block;
     /* grid-template-columns: repeat(3, 1fr); */
     padding-left: 5px;
-    margin-left: 160px;
   }
   .border {
     border: 1px solid #e8e8e8;
@@ -509,7 +507,7 @@ footer h1 {
     width: 200px;
     padding-bottom: 20px;
     padding-top: 30px;
-    padding-left: 230px;
+    padding-left: 70px;
     font-size: 1em;
   }
 }

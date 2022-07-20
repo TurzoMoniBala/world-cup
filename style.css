@@ -77,7 +77,7 @@ body {
 ------------article------
 ----------------------- */
 article {
-  margin: 130px 140px 130px 140px;
+  margin: 130px 0px 130px 140px;
   display: flex;
 }
 /* side button box or nav bar */
@@ -167,7 +167,7 @@ article {
 ----------------------------*/
 footer {
   width: 1600px;
-  height: 444px;
+  height: px;
   background-color: #161616;
   padding: 130px 140px;
 }
@@ -220,6 +220,7 @@ footer h1 {
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   body {
     margin: 0;
+    margin-right: 0;
   }
   /* top banner css */
   .top-banner {
@@ -228,7 +229,6 @@ footer h1 {
     margin: 50px;
     padding-top: 60px;
     padding-left: 76 px;
-    margin: 50px;
   }
   .top-banner h1 {
     font-weight: 700;
@@ -284,30 +284,30 @@ footer h1 {
   -----------article--
   -------------------*/
   article {
+    width: 91%;
     margin: 30px 50px;
     display: inline-block;
   }
   /* side button box or nav bar */
   .button-box {
-    width: auto;
+    width: 95%;
     height: 64px;
     background-color: white;
-    padding: 30px;
     border-radius: 10px;
     display: flex;
-    margin-right: 24px;
-    padding-top: 0;
     align-items: center;
-    justify-content: center;
-    padding-left: 50px;
-    margin-left: 50px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
   }
   /* all blog or grid box */
   .blog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 55px;
+    gap: 40px;
     padding-left: 50px;
+    padding: 0;
   }
   .button-box button {
     width: 200px;
@@ -388,8 +388,6 @@ mobile
 --------------------*/
 @media only screen and (max-width: 688px) {
   body {
-    align-items: center;
-    justify-content: center;
     margin: 0;
   }
   /* banner top section */
@@ -403,7 +401,6 @@ mobile
     padding-bottom: 0;
     margin: 5%;
     margin-right: 5%;
-    padding-left: 140px;
   }
   .top-banner h1 {
     font-size: 30px;
@@ -414,7 +411,7 @@ mobile
     font-size: 10px;
   }
   .banner-taxt {
-    padding: 0 40px 40px 40px;
+    padding: 0px;
     width: 250px;
     height: 220px;
     justify-content: center;
@@ -435,11 +432,11 @@ mobile
   }
   /* image section for top  */
   .top-banner-img {
-    padding-left: 90px;
+    padding-left: 60px;
     padding-top: 20px;
     padding-right: 0;
-    width: 160px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
   }
   /*-------------------------
 ------------article------
@@ -447,10 +444,11 @@ mobile
   article {
     margin: 5px;
     display: block;
+    width: auto;
+    height: auto;
   }
   /* side button box or nav bar */
   .button-box {
-    margin-left: 160px;
     width: 252px;
     height: 252px;
     background-color: rgb(255, 255, 255);
@@ -458,14 +456,15 @@ mobile
     border-radius: 10px;
     display: grid;
     gap: 30px;
-    margin-right: 24px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   /* blog section for match or grid*/
   .blog {
     display: block;
     /* grid-template-columns: repeat(1, 1fr); */
     padding-left: 5px;
-    margin-left: 160px;
   }
   .border {
     border: 1px solid #e8e8e8;
@@ -520,7 +519,7 @@ mobile
     width: 200px;
     padding-bottom: 20px;
     padding-top: 30px;
-    padding-left: 230px;
+    padding-left: 70px;
     font-size: 1em;
   }
 }
