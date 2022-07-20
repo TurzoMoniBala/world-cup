@@ -58,7 +58,7 @@ body {
   text-decoration: none;
   color: white;
 }
-/* image section for top  */
+/* image section for top with transition */
 .top-banner-img {
   padding-top: 33px;
   width: 581px;
@@ -68,6 +68,10 @@ body {
 .top-banner img {
   width: 100%;
   height: 100%;
+}
+.top-banner-img:hover {
+  transform: translate(-100px);
+  transition: 1s;
 }
 /*-------------------------
 ------------article------
